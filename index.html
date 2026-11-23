@@ -1,0 +1,497 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Media Pembelajaran Eksponen</title>
+
+<style>
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f1f5ff;
+  color: #1e293b;
+}
+
+header {
+  background: linear-gradient(120deg,#172554,#4f46e5);
+  color: white;
+  text-align: center;
+  padding: 45px 20px;
+}
+
+header h1 {
+  font-size: 38px;
+  margin: 10px;
+}
+
+header p {
+  font-size: 17px;
+}
+
+nav {
+  background: #1e293b;
+  padding: 14px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 9px 15px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+nav a:hover {
+  background: #6366f1;
+}
+
+.container {
+  max-width: 1050px;
+  margin: auto;
+  padding: 20px;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  margin: 22px 0;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px #00000010;
+}
+
+h2 {
+  color: #4338ca;
+  border-bottom: 2px solid #e0e7ff;
+  padding-bottom: 10px;
+}
+
+.formula {
+  background: #eef2ff;
+  padding: 16px;
+  border-left: 5px solid #6366f1;
+  margin: 12px 0;
+  border-radius: 8px;
+  font-size: 19px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.example {
+  background: #f0fdf4;
+  border-left: 5px solid #16a34a;
+  padding: 15px;
+  margin-top: 15px;
+  border-radius: 8px;
+}
+
+input {
+  padding: 10px;
+  width: 100%;
+  max-width: 180px;
+  border: 1px solid #cbd5e1;
+  border-radius: 7px;
+  font-size: 17px;
+}
+
+button {
+  padding: 11px 18px;
+  border: none;
+  border-radius: 8px;
+  background: #4f46e5;
+  color: white;
+  cursor: pointer;
+  font-size: 15px;
+  margin: 7px 3px;
+}
+
+button:hover {
+  background: #312e81;
+}
+
+.result {
+  background: #ecfeff;
+  padding: 18px;
+  margin-top: 15px;
+  border-radius: 10px;
+  font-size: 19px;
+  font-weight: bold;
+}
+
+.question {
+  border-bottom: 1px solid #e2e8f0;
+  padding: 15px 0;
+}
+
+.question label {
+  display: block;
+  padding: 7px;
+  cursor: pointer;
+}
+
+.question label:hover {
+  background: #eef2ff;
+  border-radius: 5px;
+}
+
+footer {
+  background: #172554;
+  color: white;
+  text-align: center;
+  padding: 25px;
+  margin-top: 30px;
+}
+
+small {
+  color: #64748b;
+}
+
+@media(max-width:600px) {
+  header h1 {font-size: 27px;}
+  nav {position: static;}
+  .card {padding: 17px;}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>📘 BELAJAR EKSPONEN</h1>
+  <p>Media Pembelajaran Matematika Interaktif</p>
+  <p>SMA Kelas X | Belajar, Mencoba, dan Memahami</p>
+</header>
+
+<nav>
+  <a href="#beranda">Beranda</a>
+  <a href="#materi">Materi</a>
+  <a href="#sifat">Sifat Eksponen</a>
+  <a href="#simulasi">Simulasi</a>
+  <a href="#contoh">Contoh Soal</a>
+  <a href="#evaluasi">Evaluasi</a>
+</nav>
+
+<div class="container">
+
+<section class="card" id="beranda">
+  <h2>Selamat Datang!</h2>
+  <p>
+    Eksponen atau bilangan berpangkat adalah bentuk perkalian
+    berulang dari suatu bilangan dengan dirinya sendiri.
+  </p>
+  <div class="formula">aⁿ = a × a × a × ... × a</div>
+  <p>
+    Keterangan:
+    <br>a = bilangan pokok (basis)
+    <br>n = pangkat (eksponen)
+  </p>
+  <div class="example">
+    <b>Contoh:</b><br>
+    2³ = 2 × 2 × 2 = 8
+  </div>
+</section>
+
+<section class="card" id="materi">
+  <h2>1. Pengertian Eksponen</h2>
+  <p>
+    Eksponen adalah cara singkat untuk menuliskan perkalian
+    berulang suatu bilangan.
+  </p>
+
+  <div class="formula">aⁿ = a × a × ... × a</div>
+
+  <p>Contoh:</p>
+  <ul>
+    <li>3² = 3 × 3 = 9</li>
+    <li>4³ = 4 × 4 × 4 = 64</li>
+    <li>5⁴ = 5 × 5 × 5 × 5 = 625</li>
+  </ul>
+
+  <div class="example">
+    <b>Ingat!</b><br>
+    Pada 5³, angka 5 disebut basis dan angka 3 disebut pangkat.
+  </div>
+</section>
+
+<section class="card" id="sifat">
+  <h2>2. Sifat-Sifat Eksponen</h2>
+
+  <h3>A. Perkalian dengan basis sama</h3>
+  <div class="formula">aᵐ × aⁿ = aᵐ⁺ⁿ</div>
+  Contoh: 2³ × 2² = 2⁵ = 32
+
+  <h3>B. Pembagian dengan basis sama</h3>
+  <div class="formula">aᵐ ÷ aⁿ = aᵐ⁻ⁿ</div>
+  Contoh: 3⁵ ÷ 3² = 3³ = 27
+
+  <h3>C. Pangkat dari suatu pangkat</h3>
+  <div class="formula">(aᵐ)ⁿ = aᵐˣⁿ</div>
+  Contoh: (2²)³ = 2⁶ = 64
+
+  <h3>D. Pangkat dari perkalian</h3>
+  <div class="formula">(a × b)ⁿ = aⁿ × bⁿ</div>
+  Contoh: (2 × 3)² = 2² × 3² = 36
+
+  <h3>E. Pangkat nol</h3>
+  <div class="formula">a⁰ = 1, untuk a ≠ 0</div>
+  Contoh: 7⁰ = 1
+
+  <h3>F. Pangkat negatif</h3>
+  <div class="formula">a⁻ⁿ = 1/aⁿ, untuk a ≠ 0</div>
+  Contoh: 2⁻³ = 1/2³ = 1/8
+
+  <h3>G. Pangkat pecahan</h3>
+  <div class="formula">a¹/ⁿ = ⁿ√a</div>
+  Contoh: 16¹/² = √16 = 4
+</section>
+
+<section class="card" id="simulasi">
+  <h2>3. Simulasi Eksponen</h2>
+  <p>Masukkan bilangan pokok dan pangkat, kemudian klik hitung.</p>
+
+  <label>Bilangan Pokok (a)</label><br>
+  <input type="number" id="basis" value="2"><br><br>
+
+  <label>Pangkat (n)</label><br>
+  <input type="number" id="pangkat" value="3"><br><br>
+
+  <button onclick="hitungEksponen()">HITUNG</button>
+  <button onclick="resetSimulasi()">RESET</button>
+
+  <div class="result" id="hasil">
+    Hasil akan muncul di sini.
+  </div>
+</section>
+
+<section class="card" id="contoh">
+  <h2>4. Contoh Soal dan Pembahasan</h2>
+
+  <div class="example">
+    <b>Soal 1:</b><br>
+    Hitunglah 2³ × 2⁴!
+    <p><b>Penyelesaian:</b></p>
+    = 2³⁺⁴<br>
+    = 2⁷<br>
+    = 128
+  </div>
+
+  <div class="example">
+    <b>Soal 2:</b><br>
+    Hitunglah (3²)³!
+    <p><b>Penyelesaian:</b></p>
+    = 3²ˣ³<br>
+    = 3⁶<br>
+    = 729
+  </div>
+
+  <div class="example">
+    <b>Soal 3:</b><br>
+    Hitunglah 5³ ÷ 5²!
+    <p><b>Penyelesaian:</b></p>
+    = 5³⁻²<br>
+    = 5¹<br>
+    = 5
+  </div>
+</section>
+
+<section class="card" id="evaluasi">
+  <h2>5. Evaluasi Pembelajaran</h2>
+  <p>Jawablah 10 soal berikut. Pilih satu jawaban yang benar!</p>
+
+  <div id="quiz"></div>
+
+  <button onclick="periksaJawaban()">SELESAIKAN EVALUASI</button>
+  <button onclick="ulangQuiz()">ULANGI LATIHAN</button>
+
+  <div class="result" id="nilai">
+    Skor akan ditampilkan setelah evaluasi.
+  </div>
+</section>
+
+</div>
+
+<footer>
+  <h3>Matematika Menyenangkan!</h3>
+  <p>Media Pembelajaran Eksponen | SMA Kelas X</p>
+  <p>Belajar dengan Semangat, Berpikir dengan Logika.</p>
+</footer>
+
+<script>
+function hitungEksponen() {
+  let a = Number(document.getElementById("basis").value);
+  let n = Number(document.getElementById("pangkat").value);
+  let hasil = document.getElementById("hasil");
+
+  if (document.getElementById("basis").value === "" ||
+      document.getElementById("pangkat").value === "") {
+    hasil.innerHTML = "Masukkan basis dan pangkat terlebih dahulu.";
+    return;
+  }
+
+  if (a === 0 && n <= 0) {
+    hasil.innerHTML = "0 tidak dapat dipangkatkan dengan pangkat nol atau negatif.";
+    return;
+  }
+
+  let nilai = Math.pow(a,n);
+
+  hasil.innerHTML =
+    a + "<sup>" + n + "</sup> = " +
+    a + " dipangkatkan " + n +
+    " = <b>" + nilai + "</b>";
+}
+
+function resetSimulasi() {
+  document.getElementById("basis").value = 2;
+  document.getElementById("pangkat").value = 3;
+  document.getElementById("hasil").innerHTML =
+    "Hasil akan muncul di sini.";
+}
+
+const questions = [
+  {
+    q:"Berapakah nilai dari 2³?",
+    o:["4","6","8","9","12"],
+    a:2,
+    e:"2³ = 2 × 2 × 2 = 8."
+  },
+  {
+    q:"Hasil dari 3² adalah ...",
+    o:["6","9","12","18","27"],
+    a:1,
+    e:"3² = 3 × 3 = 9."
+  },
+  {
+    q:"Hasil dari 2³ × 2² adalah ...",
+    o:["16","24","32","64","128"],
+    a:2,
+    e:"2³ × 2² = 2⁵ = 32."
+  },
+  {
+    q:"Hasil dari 5⁴ ÷ 5² adalah ...",
+    o:["5","10","20","25","125"],
+    a:3,
+    e:"5⁴ ÷ 5² = 5² = 25."
+  },
+  {
+    q:"Hasil dari (2²)³ adalah ...",
+    o:["16","32","48","64","128"],
+    a:3,
+    e:"(2²)³ = 2⁶ = 64."
+  },
+  {
+    q:"Nilai dari 7⁰ adalah ...",
+    o:["0","1","7","49","70"],
+    a:1,
+    e:"Setiap bilangan bukan nol berpangkat nol bernilai 1."
+  },
+  {
+    q:"Bentuk positif dari 2⁻³ adalah ...",
+    o:["-8","-1/8","1/8","8","1/6"],
+    a:2,
+    e:"2⁻³ = 1/2³ = 1/8."
+  },
+  {
+    q:"Nilai dari 16¹/² adalah ...",
+    o:["2","4","6","8","16"],
+    a:1,
+    e:"16¹/² = √16 = 4."
+  },
+  {
+    q:"Jika 3ˣ = 81, nilai x adalah ...",
+    o:["2","3","4","5","6"],
+    a:2,
+    e:"81 = 3⁴, sehingga x = 4."
+  },
+  {
+    q:"Bakteri berjumlah 5 dan menjadi dua kali lipat setiap jam. Berapa jumlah bakteri setelah 3 jam?",
+    o:["10","15","20","30","40"],
+    a:4,
+    e:"5 × 2³ = 5 × 8 = 40 bakteri."
+  }
+];
+
+function tampilkanQuiz() {
+  let html = "";
+
+  questions.forEach((q,i) => {
+    html += `<div class="question">
+      <b>${i+1}. ${q.q}</b>`;
+
+    q.o.forEach((pilihan,j) => {
+      html += `<label>
+        <input type="radio" name="q${i}" value="${j}" style="width:auto">
+        ${String.fromCharCode(65+j)}. ${pilihan}
+      </label>`;
+    });
+
+    html += `<div id="feedback${i}"></div></div>`;
+  });
+
+  document.getElementById("quiz").innerHTML = html;
+}
+
+function periksaJawaban() {
+  let benar = 0;
+  let terisi = 0;
+
+  questions.forEach((q,i) => {
+    let pilihan = document.querySelector(
+      'input[name="q'+i+'"]:checked'
+    );
+
+    let feedback = document.getElementById("feedback"+i);
+
+    if (pilihan) {
+      terisi++;
+      if (Number(pilihan.value) === q.a) {
+        benar++;
+        feedback.innerHTML =
+          '<p style="color:green">✓ Benar! '+q.e+'</p>';
+      } else {
+        feedback.innerHTML =
+          '<p style="color:#dc2626">✗ Kurang tepat. Jawaban: '+
+          String.fromCharCode(65+q.a)+'. '+q.e+'</p>';
+      }
+    } else {
+      feedback.innerHTML =
+        '<p style="color:#dc2626">Belum dijawab. '+q.e+'</p>';
+    }
+  });
+
+  let skor = benar * 10;
+
+  document.getElementById("nilai").innerHTML =
+    "<h3>HASIL EVALUASI</h3>" +
+    "Jawaban benar: " + benar + " dari 10 soal<br>" +
+    "Soal terjawab: " + terisi + " dari 10 soal<br>" +
+    "Nilai akhir: <b>" + skor + "</b><br>" +
+    (skor >= 80 ? "Hebat! Pemahamanmu sangat baik." :
+     skor >= 60 ? "Bagus! Terus tingkatkan latihanmu." :
+     "Ayo pelajari kembali materi eksponen!");
+}
+
+function ulangQuiz() {
+  tampilkanQuiz();
+  document.getElementById("nilai").innerHTML =
+    "Skor akan ditampilkan setelah evaluasi.";
+}
+
+tampilkanQuiz();
+</script>
+
+</body>
+</html>
